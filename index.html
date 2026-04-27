@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <title>China Frame</title>
+
 <style>
 body {
-    font-family: 'Georgia', serif;
     margin: 0;
+    font-family: 'Georgia', serif;
     background: #ffffff;
     color: #111;
 }
@@ -19,8 +20,9 @@ body {
 
 /* HEADER */
 .header {
-    text-align: center;
-    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header img {
@@ -29,53 +31,45 @@ body {
 
 .nav {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 15px;
+    gap: 25px;
     font-size: 14px;
-    color: #555;
 }
 
 /* MAIN */
 .main {
     display: flex;
     gap: 30px;
+    margin-top: 30px;
 }
 
-/* LEFT */
 .left {
     flex: 2;
 }
 
+.right {
+    flex: 1;
+}
+
+/* FEATURE */
 .featured img {
     width: 100%;
     border-radius: 8px;
 }
 
 .featured h1 {
-    font-size: 28px;
-    margin: 15px 0;
-}
-
-.featured p {
-    color: #666;
-}
-
-/* RIGHT */
-.right {
-    flex: 1;
+    font-size: 26px;
+    margin-top: 15px;
 }
 
 /* SIGNAL BOX */
 .signal-box {
     border: 1px solid #ddd;
-    border-radius: 10px;
     padding: 20px;
+    border-radius: 10px;
 }
 
-.signal-title {
-    font-weight: bold;
-    font-size: 20px;
+.signal-box img {
+    height: 40px;
     margin-bottom: 10px;
 }
 
@@ -96,9 +90,10 @@ body {
 }
 
 .footer img {
-    height: 50px;
+    height: 60px;
 }
 </style>
+
 </head>
 
 <body>
@@ -107,32 +102,40 @@ body {
 
     <!-- HEADER -->
     <div class="header">
-        <!-- 🔥 여기에 GIPI 로고 넣기 -->
-        <img src="logo.png">
+
+        <!-- 🔥 China Frame 로고 -->
+        <img src="chinaframe.png">
+
         <div class="nav">
             <div>Home</div>
             <div>Archive</div>
             <div>About</div>
             <div>Topics</div>
         </div>
+
     </div>
 
     <!-- MAIN -->
     <div class="main">
 
-        <!-- LEFT CONTENT -->
+        <!-- LEFT -->
         <div class="left">
+
             <div class="featured">
                 <img src="https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b">
                 <h1>중국 부동산은 살아나는가? — 그렇게 단순하지 않다</h1>
                 <p>표면적 회복 이면에 구조적 문제가 여전히 존재한다.</p>
             </div>
+
         </div>
 
-        <!-- RIGHT SIDEBAR -->
+        <!-- RIGHT -->
         <div class="right">
+
             <div class="signal-box">
-                <div class="signal-title">📊 BEIJING SIGNAL</div>
+
+                <!-- 🔥 Beijing Signal 로고 -->
+                <img src="beijingsignal.png">
 
                 <div class="signal-item">
                     <span>금융</span><br>
@@ -146,18 +149,21 @@ body {
 
                 <div class="signal-item">
                     <span>산업</span><br>
-                    전기차 정책 지속 → 산업 경쟁력 강화
+                    전기차 정책 지속 → 경쟁력 강화
                 </div>
 
             </div>
+
         </div>
 
     </div>
 
     <!-- FOOTER -->
     <div class="footer">
-        <!-- 🔥 하단 중앙 GIPI 로고 -->
-        <img src="logo.png">
+
+        <!-- 🔥 GIPI 로고 -->
+        <img src="gipi.png">
+
     </div>
 
 </div>
